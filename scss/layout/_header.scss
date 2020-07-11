@@ -1,11 +1,8 @@
-/*.header{
+.header{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: .5s;
-    padding: 40px 100px;
-}*/
+    right: 0;
+    width: 100vw;
+    z-index: 1000;
+}
