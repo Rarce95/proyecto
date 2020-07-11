@@ -2,7 +2,7 @@
   &__list {
     display: flex;
     flex-direction: column;
-    padding-left: 0;
+    padding-left: 2rem;
     margin-bottom: 0;
     list-style: none;
     @media (min-width: 768px) {
@@ -39,7 +39,6 @@
 
 .sticky{
 background: #fff;  
-    .navbar
     .nav__link{
         color: #000;
     }
