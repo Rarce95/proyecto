@@ -1,0 +1,15 @@
+.footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    &__copyright {
+        font-size: 18px;
+        color: white;
+    }
+}
+.logo {
+    width: 80px;
+}
