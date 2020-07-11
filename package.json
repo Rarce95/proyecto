@@ -1,0 +1,15 @@
+{
+  "name": "proyecto",
+  "version": "1.0.0",
+  "description": "CV interactivo ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css --output-style expanded"
+  },
+  "author": "Roger Arce B70562",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
