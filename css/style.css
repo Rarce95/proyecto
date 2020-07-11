@@ -111,6 +111,10 @@ body {
   color: black;
 }
 
+.section--port {
+  color: black;
+}
+
 .section--contact {
   height: 80vh;
   padding-top: 0;
