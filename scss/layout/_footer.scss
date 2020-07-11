@@ -1,14 +1,15 @@
 .footer {
     display: flex;
-    position: fixed;
     bottom: 0;
     width: 100%;
     align-items: center;
     justify-content: space-evenly;
+    padding: 15px;
+    background: #e5e5e5;
     &__copyright {
         font-size: 18px;
         text-align: center;
-        color: white;
+        color: #000;
     }
 }
 .logo {

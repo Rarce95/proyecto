@@ -20,17 +20,18 @@ body {
 
 .footer {
   display: flex;
-  position: fixed;
   bottom: 0;
   width: 100%;
   align-items: center;
   justify-content: space-evenly;
+  padding: 15px;
+  background: #e5e5e5;
 }
 
 .footer__copyright {
   font-size: 18px;
   text-align: center;
-  color: white;
+  color: #000;
 }
 
 .logo {
@@ -68,12 +69,12 @@ body {
 }
 
 .nav__link:hover {
-  color: red;
+  color: #fca311;
   text-decoration: none;
 }
 
 .navbar {
-  background: #000;
+  background: #14213d;
 }
 
 .navbar-brand {
@@ -81,13 +82,36 @@ body {
 }
 
 .sticky {
-  background: #fff;
+  background: #e5e5e5;
 }
 
 .sticky .nav__link {
   color: #000;
 }
 
+.sticky .nav__link:hover {
+  color: red;
+}
+
 .sticky .navbar-brand {
   color: #000 !important;
+}
+
+.section {
+  height: 100vh;
+  background: #e5e5e5;
+  padding-top: 70px;
+}
+
+.section--home {
+  color: black;
+}
+
+.sectionskills {
+  color: black;
+}
+
+.section--contact {
+  height: 80vh;
+  padding-top: 0;
 }
