@@ -16,6 +16,9 @@
     &__skills{
         margin-left: 5.5%; 
         background: url("https://raw.githubusercontent.com/Rarce95/proyecto/master/img/skill3.jpg");
+        @media(max-width: 1050px){
+            padding: 0 5%;
+        }
         @media(min-width: 800px){
             display: flex;
             margin-left: auto;  

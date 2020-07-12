@@ -118,6 +118,8 @@ body {
   height: 100vh;
   background: #e5e5e5;
   padding-top: 35px;
+  align-items: center;
+  justify-content: center;
 }
 
 .section--home {
@@ -166,6 +168,12 @@ body {
 .article__skills {
   margin-left: 5.5%;
   background: url("https://raw.githubusercontent.com/Rarce95/proyecto/master/img/skill3.jpg");
+}
+
+@media (max-width: 1050px) {
+  .article__skills {
+    padding: 0 5%;
+  }
 }
 
 @media (min-width: 800px) {
