@@ -84,19 +84,19 @@
                 } 
             }
             &:nth-child(1){
-                background: url("/img/skill1.jpg");
+                background-image: url("/img/skill1.jpg");
                 background-position: center center;
             }
             &:nth-child(2){
-                background: url("/img/skill2.jpg");
+                background-image: url("/img/skill2.jpg");
                 background-position: center center;
             }
             &:nth-child(3){
-                background: url("/img/skill3.jpg ");
+                background-image: url("/img/skill3.jpg ");
                 background-position: center center;
             }
             &:nth-child(4){
-                background: url("/img/skill4.jpg");
+                background-image: url("/img/skill4.jpg");
                 background-position: center center;
             }
         }
