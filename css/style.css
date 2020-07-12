@@ -153,13 +153,13 @@ body {
 }
 
 .article__home {
-  background: url(/img/skill3.jpg);
+  background: url(img/skill3.jpg);
   max-width: 1000px;
 }
 
 .article__skills {
   margin-left: 5.5%;
-  background: url(/img/skill3.jpg);
+  background: url(img/skill3.jpg);
 }
 
 @media (min-width: 800px) {
@@ -240,19 +240,19 @@ body {
     transform: translateY(0);
   }
   .article__content:nth-child(1) {
-    background: url(/img/skill1.jpg);
+    background: url(img/skill1.jpg);
     background-position: center center;
   }
   .article__content:nth-child(2) {
-    background: url(/img/skill2.jpg);
+    background: url(img/skill2.jpg);
     background-position: center center;
   }
   .article__content:nth-child(3) {
-    background: url(/img/skill3.jpg);
+    background: url(img/skill3.jpg);
     background-position: center center;
   }
   .article__content:nth-child(4) {
-    background: url(/img/skill4.jpg);
+    background: url(img/skill4.jpg);
     background-position: center center;
   }
 }
