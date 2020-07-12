@@ -106,23 +106,28 @@ body {
 }
 
 .section--home {
-  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sectionskills {
-  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .section--port {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px;
 }
 
 .section--contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 80vh;
-  color: black;
 }
 
 .article {
@@ -130,7 +135,6 @@ body {
   border-radius: 10px;
   margin: 35px;
   background: rgba(0, 0, 0, 0.2);
-  display: flex;
 }
 
 .article__home {
@@ -139,7 +143,6 @@ body {
 }
 
 .article__skills {
-  width: 89%;
   margin-left: 5.5%;
   background: url(/img/skill3.jpg);
 }
@@ -147,9 +150,10 @@ body {
 @media (min-width: 800px) {
   .article__skills {
     display: flex;
-    position: absolute;
-    margin-left: 5.5%;
+    margin-left: auto;
+    margin-right: auto;
     background: none;
+    max-width: 1000px;
   }
 }
 
@@ -234,7 +238,7 @@ body {
     background-position: center center;
   }
   .article__content:nth-child(4) {
-    background: url(/img/skill2.jpg);
+    background: url(/img/skill4.jpg);
     background-position: center center;
   }
 }
@@ -272,4 +276,86 @@ body {
   .skillcontainer__icon {
     margin: 15px;
   }
+}
+
+.portcontainer {
+  display: flex;
+  transform: translate3d(0, 0, 0);
+  transition: all 600ms;
+  animation-name: autoplay;
+  animation-duration: 6.5s;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+.portcontainer__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  flex-grow: 0;
+  max-width: 100%;
+}
+
+.portcontainer__img {
+  object-fit: cover;
+}
+
+.portcontainer__desc {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  margin: 6%;
+}
+
+@media (min-width: 800px) {
+  .portcontainer__desc {
+    margin: 15%;
+  }
+}
+
+.portcontrols {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.portcontrols__lbl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid white;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 0 10px;
+  text-align: center;
+  transition: all 300ms;
+}
+
+.portcontrols__lbl:hover {
+  transform: scale(2);
+}
+
+input[id="1"]:checked ~ .portcontainer {
+  animation: none;
+  transform: translate3d(0, 0, 0);
+}
+
+input[id="2"]:checked ~ .portcontainer {
+  animation: none;
+  transform: translate3d(calc(-100% * 1), 0, 0);
+}
+
+input[id="3"]:checked ~ .portcontainer {
+  animation: none;
+  transform: translate3d(calc(-100% *2), 0, 0);
 }

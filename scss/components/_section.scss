@@ -3,19 +3,24 @@
     background: #e5e5e5;
     padding-top: 70px;
     &--home{
-        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     &skills{
-        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     &--port{
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 30px;
     }
     &--contact{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         height: 80vh;
-        color: black;
     }
 }

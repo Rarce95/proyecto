@@ -3,23 +3,20 @@
     border-radius: 10px;
     margin:35px;
     background: rgba(0,0,0,0.2);
-    display: flex;
-    @media(min-width: 800px){
-            
-        }
+
     &__home{
         background: url(/img/skill3.jpg);
         max-width: 1000px;
     }
     &__skills{
-        width: 89%;
         margin-left: 5.5%; 
         background: url(/img/skill3.jpg);
         @media(min-width: 800px){
             display: flex;
-            position: absolute;
-            margin-left: 5.5%;   
+            margin-left: auto;  
+            margin-right: auto; 
             background: none;
+            max-width: 1000px;
         }
     }
     &__port{
@@ -95,7 +92,7 @@
                 background-position: center center;
             }
             &:nth-child(4){
-                background: url(/img/skill2.jpg);
+                background: url(/img/skill4.jpg);
                 background-position: center center;
             }
         }
