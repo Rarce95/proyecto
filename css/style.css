@@ -2,6 +2,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  list-style: none;
 }
 
 body {
@@ -25,13 +27,13 @@ body {
   align-items: center;
   justify-content: space-evenly;
   padding: 15px;
-  background: #e5e5e5;
+  background: #14213d;
 }
 
 .footer__copyright {
   font-size: 18px;
   text-align: center;
-  color: #000;
+  color: #fff;
 }
 
 .logo {
@@ -112,10 +114,162 @@ body {
 }
 
 .section--port {
-  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
 }
 
 .section--contact {
   height: 80vh;
-  padding-top: 0;
+  color: black;
+}
+
+.article {
+  height: 85%;
+  border-radius: 10px;
+  margin: 35px;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+}
+
+.article__home {
+  background: url(/img/skill3.jpg);
+  max-width: 1000px;
+}
+
+.article__skills {
+  width: 89%;
+  margin-left: 5.5%;
+  background: url(/img/skill3.jpg);
+}
+
+@media (min-width: 800px) {
+  .article__skills {
+    display: flex;
+    position: absolute;
+    margin-left: 5.5%;
+    background: none;
+  }
+}
+
+.article__port {
+  position: relative;
+  max-width: 1000px;
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.article__contact {
+  height: 90%;
+  margin: 0 35px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.article__title {
+  text-align: center;
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+.article__title--skill {
+  font-size: 20px;
+}
+
+.article__title--t {
+  padding-bottom: 0;
+}
+
+@media (min-width: 800px) {
+  .article__title--t {
+    overflow: hidden;
+    display: none;
+  }
+}
+
+.article__text {
+  text-align: justify;
+  margin: 40px;
+  color: #fff;
+}
+
+.article__text--skill {
+  margin: 0 20px;
+}
+
+@media (min-width: 800px) {
+  .article__content {
+    position: relative;
+    background: red;
+    height: 100%;
+    flex: 1;
+    border-right: 2px solid black;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+  }
+  .article__content:hover {
+    flex-grow: 4;
+  }
+  .article__content:last-child {
+    border-right: none;
+  }
+  .article__content:hover .article__desc {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    transform: translateY(0);
+  }
+  .article__content:nth-child(1) {
+    background: url(/img/skill1.jpg);
+    background-position: center center;
+  }
+  .article__content:nth-child(2) {
+    background: url(/img/skill2.jpg);
+    background-position: center center;
+  }
+  .article__content:nth-child(3) {
+    background: url(/img/skill3.jpg);
+    background-position: center center;
+  }
+  .article__content:nth-child(4) {
+    background: url(/img/skill2.jpg);
+    background-position: center center;
+  }
+}
+
+.article__desc {
+  margin: 10px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 800px) {
+  .article__desc {
+    position: absolute;
+    bottom: 0;
+    margin: 40px;
+    padding: 30px;
+    background: #000;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateY(100px);
+  }
+}
+
+.skillcontainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.skillcontainer__icon {
+  margin: 7px;
+}
+
+@media (min-width: 800px) {
+  .skillcontainer__icon {
+    margin: 15px;
+  }
 }

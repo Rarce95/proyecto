@@ -9,10 +9,13 @@
         color: black;
     }
     &--port{
-        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
     }
     &--contact{
         height: 80vh;
-        padding-top:0;
+        color: black;
     }
 }

@@ -21,11 +21,12 @@
     <header class="header">
         <nav class="navbar navbar-expand-md navbar-dark">
             <a class="navbar-brand" href="">Roger Arce</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
+            </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <ul class="nav__list">
+                <ul class="navbar-nav">
                     <li class="nav__item"><a class="nav__link" href="#home">Inicio</a> </li>
                     <li class="nav__item"><a class="nav__link" href="#skills">Habilidades</a> </li>
                     <li class="nav__item"><a class="nav__link" href="#port">Portafolio</a> </li>
@@ -36,16 +37,110 @@
     </header>
     <main>
         <section class="section section--home" id="home">
-            <h2 >Guapo</h2>
+            <article class="article article__home">
+                <h2 class="article__title">Sobre mí</h2>
+                <p class="article__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure eius recusandae ab quibusdam delectus
+                    repudiandae reiciendis nisi animi dolore fugiat saepe architecto aspernatur dolorum, minima neque
+                    accusantium quam incidunt. Illum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
+                    magnam veritatis officia voluptatum quaerat, illo repellat animi odit, maxime cum assumenda, tempore
+                    dignissimos quasi. Ratione inventore ducimus ad exercitationem dignissimos?</p>
+            </article>
         </section>
         <section class="section section--skills" id="skills">
-            <h2>Skills</h2>
+            <div class="article article__skills">
+                <article class="article__content">
+                    <div class="article__desc">
+                        <h2 class=" article__title article__title--skill">Web</h2>
+                        <p class="article__text article__text--skill">Conocimiento suficiebte sobre algunos lenguajes para la creación web</p>
+                        <div class="skillcontainer">
+                            <img class="skillcontainer__icon" src="https://icongr.am/devicon/html5-original.svg?size=48&color=currentColor" alt="">
+                            <img class="skillcontainer__icon" src="https://icongr.am/devicon/css3-original.svg?size=48&color=currentColor" alt="">
+                            <img class="skillcontainer__icon" src="https://icongr.am/devicon/javascript-original.svg?size=48&color=currentColor" alt="">
+                        </div>
+                        
+                        <!-- <span class="article__text article__text--skill--spam">HTML</span>
+                        <span class="article__text article__text--skill--spam">CSS</span>
+                        <span class="article__text article__text--skill--spam">JavaScript</span> -->
+                    </div>  
+                </article>
+                <article class="article__content">
+                    <div class="article__desc">
+                        <h2 class="article__title article__title--skill">Bases de Datos</h2>
+                        <p class="article__text article__text--skill">Diferentes gestores utilizados en algunos proyectos</p>
+                        <div class="skillcontainer">
+                            <img class="skillcontainer__icon" src="https://icongr.am/devicon/mysql-original.svg?size=48&color=currentColor" alt="">
+                            <img class="skillcontainer__icon" src="https://icongr.am/devicon/oracle-original.svg?size=48&color=currentColor" alt="">
+                            <img class="skillcontainer__icon" src="https://img.icons8.com/color/48/000000/microsoft-sql-server.png"/>
+                        </div>
+                        
+                        <!-- <span class="article__text article__text--skill--spam">MySQL</span>
+                        <span class="article__text article__text--skill--spam">Oracle</span>
+                        <span class="article__text article__text--skill--spam">MySQL Server</span> -->
+                    </div>
+                </article>
+                <article class="article__content">
+                    <div class="article__desc">
+                        <h2 class="article__title article__title--skill">Escritorio</h2>
+                        <p class="article__text article__text--skill">Conocimientos básicos sobre lenguajes vistos en la carrera</p>
+                        <div class="skillcontainer">
+                            <img class="skillcontainer__icon" src="https://icongr.am/devicon/java-original.svg?size=48&color=currentColor" alt="">
+                            <img class="skillcontainer__icon" src="https://icongr.am/devicon/csharp-original.svg?size=48&color=currentColor" alt=""> 
+                            <img class="skillcontainer__icon" src="https://icongr.am/devicon/c-original.svg?size=48&color=currentColor" alt="">   
+                        </div>
+                        <!-- <span class="article__text article__text--skill--spam">Java</span>
+                        <span class="article__text article__text--skill--spam">C#</span> -->
+                    </div>
+                </article>
+                <article class="article__content">
+                    <div class="article__desc">
+                        <h2 class="article__title article__title--skill">Herramientas desarrollo</h2>
+                        <p class="article__text article__text--skill">Conocimiento básico sobre herramientas utilizadas a lo largo de la carrera</p>
+                         <div class="skillcontainer">
+                            <img class="skillcontainer__icon" src="https://icongr.am/devicon/visualstudio-plain.svg?size=48&color=currentColor" alt="">
+                            <img class="skillcontainer__icon" src="https://img.icons8.com/fluent/48/000000/visual-studio-code-2019.png"/>
+                            <img class="skillcontainer__icon" src="https://icongr.am/devicon/git-original.svg?size=48&color=currentColor" alt="">    
+                         </div> 
+                        <!-- <span class="article__text article__text--skill--spam">NeatBeans</span>
+                        <span class="article__text article__text--skill--spam">Visual Studio</span>
+                        <span class="article__text article__text--skill--spam">Visual Studio Code</span> -->
+                    </div>
+                </article>
+            </div>
+            
         </section>
         <section class="section section--port" id="port">
-            <h2 >Portafolio</h2>
+            <article class=" article article__port">
+                <input type="radio" id="1" name="port-1" hidden>
+                <input type="radio" id="2" name="port-2" hidden>
+                <input type="radio" id="3" name="port-3" hidden>
+                <div class="portcontainer">
+                    <div class="portcontainer__item">
+                        <img class="portcontainer__img" src="/img/port1.jpg" alt="">
+                    </div>
+                    <div class="portcontainer__item">
+                        <img class="portcontainer__img" src="" alt="">
+                    </div>
+                    <div class="portcontainer__item">
+                        <img class="portcontainer__img" src="/img/port1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="portcontrols">
+                    <label class="portcontrols__lbl" for="1">
+                        <img class="portcontrols__img" src="/img/port1.jpg" alt="">
+                    </label>
+                    <label class="portcontrols__lbl" for="2">
+                        <img class="portcontrols__img" src="" alt="">
+                    </label>
+                    <label class="portcontrols__lbl" for="3">
+                        <img class="portcontrols__img" src="/img/port1.jpg" alt="">
+                    </label>
+                </div>
+            </article>
         </section>
         <section class="section section--contact" id="contact">
-            <h2>Contacto</h2>
+            <article class="article__contact">
+                <h2>Contacto</h2>
+            </article>
         </section>
     </main>
 
@@ -56,10 +151,11 @@
         <a href="https://instagram.com/eduar3095?igshid=uqaku9motpx7"><img class="logo" src="/img/logo.g9"></a>
     </footer>
     <script type="text/javascript">
-        window.addEventListener('scroll',function(){
+        window.addEventListener('scroll', function () {
             var header = document.querySelector('.navbar');
-            header.classList.toggle('sticky',window.scrollY>0);
+            header.classList.toggle('sticky', window.scrollY > 0);
         })
     </script>
 </body>
+
 </html>

@@ -1,5 +1,130 @@
 .article{
+    height: 85%;
+    border-radius: 10px;
+    margin:35px;
+    background: rgba(0,0,0,0.2);
+    display: flex;
+    @media(min-width: 800px){
+            
+        }
     &__home{
-        height: 100%;
+        background: url(/img/skill3.jpg);
+        max-width: 1000px;
+    }
+    &__skills{
+        width: 89%;
+        margin-left: 5.5%; 
+        background: url(/img/skill3.jpg);
+        @media(min-width: 800px){
+            display: flex;
+            position: absolute;
+            margin-left: 5.5%;   
+            background: none;
+        }
+    }
+    &__port{
+        position: relative;
+        max-width: 1000px;
+        width: 100%;
+        border-radius: 6px;
+        overflow: hidden;
+    }
+    &__contact{
+        height: 90%;
+        margin: 0 35px;
+        background: rgba(0,0,0,0.2);
+        border-radius: 10px;
+    }
+    &__title{
+      text-align: center;
+      padding-bottom: 10px;
+      color: #fff;
+      &--skill{
+          font-size: 20px;
+      }
+      &--t{
+        padding-bottom: 0;
+        @media(min-width: 800px){
+            overflow: hidden;
+            display: none;
+        }
+    }
+    }
+    &__text{
+        text-align: justify;
+        margin: 40px;
+        color: #fff;
+        &--skill{
+            margin: 0 20px;
+        }
+    }
+    &__content{
+        @media(min-width: 800px){
+            position: relative;
+            background: red;
+            height: 100%;
+            flex: 1;
+            border-right: 2px solid black;
+            overflow: hidden;
+            transition: 0.5s ease-in-out;
+            
+            &:hover{
+                flex-grow: 4;
+            }
+            &:last-child{
+                border-right: none;
+            }
+            &:hover{
+                .article__desc {
+                    visibility: visible;
+                    opacity: 1;
+                    transition: 0.5s;
+                    transform: translateY(0);
+                } 
+            }
+            &:nth-child(1){
+                background: url(/img/skill1.jpg);
+                background-position: center center;
+            }
+            &:nth-child(2){
+                background: url(/img/skill2.jpg);
+                background-position: center center;
+            }
+            &:nth-child(3){
+                background: url(/img/skill3.jpg);
+                background-position: center center;
+            }
+            &:nth-child(4){
+                background: url(/img/skill2.jpg);
+                background-position: center center;
+            }
+        }
+    }
+    &__desc{
+        margin:10px;
+        background: rgba(0,0,0,0.5);
+        @media(min-width: 800px){
+            position: absolute;
+            bottom: 0;
+            margin: 40px;
+            padding: 30px;
+            background: #000;
+            color: #fff;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.5s;
+            transform: translateY(100px);
+        }
+        
+    }
+}
+.skillcontainer{
+    display: flex;
+    justify-content: space-around;
+    &__icon{
+        margin: 7px;
+        @media(min-width: 800px){
+            margin: 15px;
+        }
     }
 }
