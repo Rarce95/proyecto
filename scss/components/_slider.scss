@@ -2,11 +2,6 @@
     display: flex;
     transform: translate3d(0, 0, 0);
     transition: all 600ms;
-    animation-name: autoplay;
-    animation-duration: 6.5s;
-    animation-direction: alternate;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
     &__item{
         position: relative;
         display: flex;
@@ -20,8 +15,8 @@
     }
     &__desc{
         position: absolute;
-        background: rgba(0,0,0,0.5);
-        margin: 6%;
+        margin:10% 5%;
+        background: $sixth-color;
         @media(min-width: 800px){
             margin: 15%;
         }
@@ -40,13 +35,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        border: 2px solid white;
+        border: 2px solid $secundary-color;
         width: 16px;
         height: 16px;
         border-radius: 4px;
         overflow: hidden;
         cursor: pointer;
-        background: rgba(255,255,255,0.5);
+        background: $tenth-color;
         margin: 0 10px;;
         text-align: center;
         transition: all 300ms;

@@ -2,7 +2,7 @@
     height: 85%;
     border-radius: 10px;
     margin:35px;
-    background: rgba(0,0,0,0.2);
+    background: $tertiary-color;
 
     &__home{
         background: url(/img/skill3.jpg);
@@ -29,13 +29,13 @@
     &__contact{
         height: 90%;
         margin: 0 35px;
-        background: rgba(0,0,0,0.2);
+        background: $tertiary-color;
         border-radius: 10px;
     }
     &__title{
       text-align: center;
       padding-bottom: 10px;
-      color: #fff;
+      color: $secundary-color;
       &--skill{
           font-size: 20px;
       }
@@ -50,7 +50,7 @@
     &__text{
         text-align: justify;
         margin: 40px;
-        color: #fff;
+        color: $secundary-color;
         &--skill{
             margin: 0 20px;
         }
@@ -58,10 +58,9 @@
     &__content{
         @media(min-width: 800px){
             position: relative;
-            background: red;
             height: 100%;
             flex: 1;
-            border-right: 2px solid black;
+            border-right: 2px solid $primary-color;
             overflow: hidden;
             transition: 0.5s ease-in-out;
             
@@ -99,14 +98,14 @@
     }
     &__desc{
         margin:10px;
-        background: rgba(0,0,0,0.5);
+        background: $sixth-color;
         @media(min-width: 800px){
             position: absolute;
             bottom: 0;
             margin: 40px;
             padding: 30px;
-            background: #000;
-            color: #fff;
+            background: $primary-color;
+            color: $secundary-color;
             visibility: hidden;
             opacity: 0;
             transition: 0.5s;

@@ -7,7 +7,6 @@
 }
 
 body {
-  background: #000;
   min-height: 100vh;
 }
 
@@ -96,7 +95,7 @@ body {
 }
 
 .navbar-brand {
-  color: white;
+  color: #fff;
 }
 
 .sticky {
@@ -222,10 +221,9 @@ body {
 @media (min-width: 800px) {
   .article__content {
     position: relative;
-    background: red;
     height: 100%;
     flex: 1;
-    border-right: 2px solid black;
+    border-right: 2px solid #000;
     overflow: hidden;
     transition: 0.5s ease-in-out;
   }
@@ -298,11 +296,6 @@ body {
   display: flex;
   transform: translate3d(0, 0, 0);
   transition: all 600ms;
-  animation-name: autoplay;
-  animation-duration: 6.5s;
-  animation-direction: alternate;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
 }
 
 .portcontainer__item {
@@ -320,8 +313,8 @@ body {
 
 .portcontainer__desc {
   position: absolute;
+  margin: 10% 5%;
   background: rgba(0, 0, 0, 0.5);
-  margin: 6%;
 }
 
 @media (min-width: 800px) {
@@ -345,7 +338,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid white;
+  border: 2px solid #fff;
   width: 16px;
   height: 16px;
   border-radius: 4px;
