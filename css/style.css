@@ -254,7 +254,7 @@ body {
     background-position: center center;
   }
   .article__content:nth-child(3) {
-    background-image: url("/img/skill3.jpg ");
+    background-image: url("https://raw.githubusercontent.com/Rarce95/proyecto/master/img/skill3.jpg");
     background-position: center center;
   }
   .article__content:nth-child(4) {
