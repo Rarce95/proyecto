@@ -5,12 +5,17 @@
     background: $tertiary-color;
 
     &__home{
-        background: url(./img/skill3.jpg);
+        background: url(/img/skill3.jpg);
         max-width: 1000px;
+        &--desc{
+            background: rgba(0,0,0,0.5);
+            height: 80%;
+            margin: 7%;
+        }
     }
     &__skills{
         margin-left: 5.5%; 
-        background: url(./img/skill3.jpg);
+        background: url(/img/skill3.jpg);
         @media(min-width: 800px){
             display: flex;
             margin-left: auto;  
@@ -27,7 +32,7 @@
         overflow: hidden;
     }
     &__contact{
-        height: 90%;
+        height: 80%;
         margin: 0 35px;
         background: $tertiary-color;
         border-radius: 10px;
@@ -79,19 +84,19 @@
                 } 
             }
             &:nth-child(1){
-                background: url(img/skill1.jpg);
+                background: url(/img/skill1.jpg);
                 background-position: center center;
             }
             &:nth-child(2){
-                background: url(img/skill2.jpg);
+                background: url(/img/skill2.jpg);
                 background-position: center center;
             }
             &:nth-child(3){
-                background: url(img/skill3.jpg);
+                background: url(/img/skill3.jpg);
                 background-position: center center;
             }
             &:nth-child(4){
-                background: url(img/skill4.jpg);
+                background: url(/img/skill4.jpg);
                 background-position: center center;
             }
         }
