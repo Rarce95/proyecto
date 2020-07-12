@@ -153,13 +153,13 @@ body {
 }
 
 .article__home {
-  background: url(img/skill3.jpg);
+  background: url(./img/skill3.jpg);
   max-width: 1000px;
 }
 
 .article__skills {
   margin-left: 5.5%;
-  background: url(img/skill3.jpg);
+  background: url(./img/skill3.jpg);
 }
 
 @media (min-width: 800px) {
