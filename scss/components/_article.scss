@@ -5,7 +5,7 @@
     background: $tertiary-color;
 
     &__home{
-        background: url(/img/skill3.jpg);
+        background: url("https://raw.githubusercontent.com/Rarce95/proyecto/master/img/skill3.jpg");
         max-width: 1000px;
         &--desc{
             background: rgba(0,0,0,0.5);
@@ -15,7 +15,7 @@
     }
     &__skills{
         margin-left: 5.5%; 
-        background: url(/img/skill3.jpg);
+        background: url("https://raw.githubusercontent.com/Rarce95/proyecto/master/img/skill3.jpg");
         @media(min-width: 800px){
             display: flex;
             margin-left: auto;  
@@ -84,11 +84,11 @@
                 } 
             }
             &:nth-child(1){
-                background-image: url("/img/skill1.jpg");
+                background-image: url("https://raw.githubusercontent.com/Rarce95/proyecto/master/img/skill1.jpg");
                 background-position: center center;
             }
             &:nth-child(2){
-                background-image: url("/img/skill2.jpg");
+                background-image: url("https://raw.githubusercontent.com/Rarce95/proyecto/master/img/skill2.jpg");
                 background-position: center center;
             }
             &:nth-child(3){
@@ -96,7 +96,7 @@
                 background-position: center center;
             }
             &:nth-child(4){
-                background-image: url("/img/skill4.jpg");
+                background-image: url("https://raw.githubusercontent.com/Rarce95/proyecto/master/img/skill4.jpg");
                 background-position: center center;
             }
         }
