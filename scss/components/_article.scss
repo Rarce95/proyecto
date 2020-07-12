@@ -1,7 +1,7 @@
 .article{
     height: 85%;
     border-radius: 10px;
-    margin:35px;
+    margin:10px;
     background: $tertiary-color;
 
     &__home{
@@ -11,6 +11,10 @@
             background: $sixth-color;
             height: 80%;
             margin: 7%;
+            @media(min-width: 800px){
+                height: 60%;
+                margin-top: 130px;
+            }
         }
     }
     &__skills{
